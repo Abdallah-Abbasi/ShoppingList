@@ -1,0 +1,23 @@
+$primary_color: #d61212;
+$secondary_color: #052750;
+$tertiary_color: #ff0000;
+$bg_light: #f4f4f4;
+$main_speed: all 0.3s linear;
+// ------------- Media -------------
+
+@mixin large {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 500px) {
+    @content;
+  }
+}
